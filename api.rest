@@ -1,0 +1,47 @@
+
+GET http://localhost:3000/
+
+### REGISTER
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+  "username": "john@gmail.com",
+  "password": "john"
+}
+
+### LOGIN
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username": "john@gmail.com",
+  "password": "john"
+}
+
+### TOKEN
+POST http://localhost:3000/token/
+Content-Type: application/json
+
+{
+  "token": ""
+}
+
+### LOGOUT
+POST http://localhost:3000/logout/
+Content-Type: application/json
+
+{
+  "token": ""
+}
+
+### USERS
+GET http://localhost:3000/users/
+Authorization: Bearer
+
+
+### Copy Access and Refresh token here :
+{
+  "accessToken": "",
+  "refreshToken": ""
+}
